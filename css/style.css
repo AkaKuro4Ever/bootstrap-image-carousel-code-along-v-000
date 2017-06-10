@@ -1,0 +1,45 @@
+img, video, audio, iframe, table, form {
+  width: 100%; /* IE */
+  max-width: 100%; /* FF, Safari, Chrome */
+}
+
+/* Layout Styles */
+
+.row {
+  margin-bottom: 20px;
+}
+
+/* Carousel Styles */
+
+
+#carousel-example-generic .item img {
+  height: auto;
+}
+
+.carousel-caption p {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) /*FOR SMALL DEVICES*/ {
+
+    #carousel-example-generic .item img {
+      height: 384px; /*This number gotten by dividing by two on the min-width screen size. Good aspect ratio.*/
+    }
+}
+
+@media only screen and (min-width: 992px) /*For MEDIUM SIZED DEVICES*/ {
+
+  #carousel-example-generic .item img {
+    height: 496px; /*This number gotten by dividing by two on the min-width screen size. Gives good aspect ratio*/
+  }
+  .carousel-caption p {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1200px) /*FOR LARGE DEVICES - these numbers taken from Bootstrap's Responsive Grid system - got to getboottrap.com/css and go tot grid system and look at the chart for the break points */ {
+  #carousel-example-generic .item img {
+    height:600px; /*This number gotten by dividing by two on the min-width screen size. Gives good aspect ratio.*/
+  }
+
+}
